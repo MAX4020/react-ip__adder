@@ -1,0 +1,45 @@
+.container{
+    margin: 0 auto;
+    width: 1440px;
+}
+.adress{
+    margin-top: 40px;
+    display: flex;
+}
+.heading{
+    font-size: 28px;
+    color: #a71515;
+    margin-right: 10px;
+}
+.input{
+    line-height: 50px;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 5px;
+    background-color: #404040;
+    color: white;
+    border: none;
+    font-size: 24px;
+}
+.ip{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.port{
+    display: flex;
+    align-items: center;
+}
+.adder{
+    display: flex;
+    width: 8%;
+    float: right;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.btn{
+    background: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+}
