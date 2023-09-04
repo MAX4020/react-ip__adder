@@ -1,0 +1,10 @@
+.case{
+}
+.table__input{
+    border: none;
+    background-color: #404040;
+    outline: none;
+    color: white;
+    padding: 5px;
+    width: 90%;
+}

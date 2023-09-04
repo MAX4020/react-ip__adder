@@ -43,3 +43,9 @@
     cursor: pointer;
     border-radius: 50%;
 }
+.table{
+    padding-left: 5px;
+    padding-top: 10px;
+    margin-top: 80px;
+    background-color: #303030;
+}
