@@ -1,14 +1,11 @@
 import "../style/Main.css"
 import plus from "../icon/plus.png"
 import Table from "../comp/table/Table.jsx"
-import { useState } from "react"
+import { useContext, useState } from "react"
+import { MainContextValues } from "../contexts/MainContext"
 
 const Main = () => {
-    const [row,setRow] = useState([{}])
-    const addRow = () =>{
-        setRow([...row,{}])
-        console.log([row])
-    }
+    const {row,addRow} = useContext(MainContextValues)
     return ( 
         <>
             <div className="container">
