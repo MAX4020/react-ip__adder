@@ -13,13 +13,17 @@
 }
 .input{
     line-height: 50px;
-    border-radius: 5px;
     outline: none;
     padding-left: 5px;
     background-color: #404040;
     color: white;
     border: none;
     font-size: 24px;
+    transition: 0.3s;
+}
+.input:focus{
+    background-color: #303030;
+    transition: 0.3s;
 }
 .ip{
     display: flex;
@@ -32,10 +36,8 @@
 }
 .adder{
     display: flex;
-    width: 8%;
     float: right;
     margin-top: 20px;
-    justify-content: space-between;
 }
 .btn{
     background: none;
@@ -48,4 +50,22 @@
     padding-top: 10px;
     margin-top: 80px;
     background-color: #303030;
+}
+.btn__save{
+    width: 150px;
+    line-height: 50px;
+    border: none;
+    cursor: pointer;
+    background-color: #303030;
+    color: #a71515;
+    font-size: 28px;
+    font-weight: 700;
+    float: right;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+.btn__save:hover{
+    transition: 0.3s;
+    background-color: #a71515;
+    color: #404040;
 }
