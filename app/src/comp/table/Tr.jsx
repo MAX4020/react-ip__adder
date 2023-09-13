@@ -4,18 +4,24 @@ import { useState, useEffect, useRef, useContext } from "react";
 
 const Tr = ({ rowData }) => {
 
-    const {deleteRow} = useContext(MainContextValues);
+    const {deleteRow, addRefListener, deleteRefListener} = useContext(MainContextValues);
 
-    const inputValue = useRef()
     const [state, setState] = useState(['', '', '', '', '', '', '', ''])
+    const refValue = useRef(['', '', '', '', '', '', '', ''])
 
     const addState = (e, key) => {
         let k = [...state];
         k[key] = e.target.value
+        refValue.current = k
         setState(k)
         console.log(k)
     }
-
+    useEffect(()=>{
+        addRefListener(rowData.id, refValue)
+        return ()=>{
+            deleteRefListener(rowData.id)
+        }
+    },[])
     return (
         <>
             <tr>
