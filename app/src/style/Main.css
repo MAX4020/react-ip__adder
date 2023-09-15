@@ -52,7 +52,8 @@
     background-color: #303030;
 }
 .btn__save{
-    width: 150px;
+    width: 200px;
+    margin-left: 10px;
     line-height: 50px;
     border: none;
     cursor: pointer;
